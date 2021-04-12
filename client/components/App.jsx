@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import Deathstar from './Deathstar'
-import testData from '../../data/testdata.json'
+import Card from './Card'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello React star wars</h1>
+      <Card />
       <Deathstar />
     </div>
   )

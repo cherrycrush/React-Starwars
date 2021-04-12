@@ -3,14 +3,13 @@ import testData from '../../data/testdata.json'
 
 const Deathstar = () => {
     return (
-        <div>
-            <p>{testData.name}</p>
-            <p>{testData.model}</p>
-            <p>{testData.manufacturer}</p>
+        <div className="content">
+            <p>Model: {testData.model}</p>
+            <p>Manufacterer: {testData.manufacturer}</p>
+            <p>Crew: {testData.crew}</p>
+            <p>Starship Class: {testData.starship_class}</p>
         </div>
     )
-
 }
-
 
 export default Deathstar
