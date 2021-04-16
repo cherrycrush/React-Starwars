@@ -1,9 +1,9 @@
 * {
     background-color: rgb(8, 8, 36);
+    font-family: 'Press Start 2P', cursive;
 }
 
 body {
-    font-family: 'Press Start 2P', cursive;
     color: antiquewhite;
 }
 
@@ -18,7 +18,13 @@ body {
     padding: 1rem;
     margin: 0 auto;
     width: 40rem;
-    background-color: rgba(128, 128, 128, 0.100);
+    background-color: rgba(128, 128, 128, 0.150);
 }
 
+button {
+    margin: 0 auto;
+    border: none;
+    padding: 1rem;
+    color: goldenrod;
+}
 

@@ -1,11 +1,10 @@
 import React from 'react'
-import testData from '../../data/testdata.json'
 
-
-class welcomeCard extends React.Component {
-  render() {
-    return <h1 className="heading">Hello, {testData.name}</h1>
-  }
+const Card = (props) => {
+  const { name } = props
+  return (
+    <h1 className="heading">Hello, {name}</h1>
+  )
 }
 
-export default welcomeCard
+export default Card

@@ -4,11 +4,11 @@ import Deathstar from './Deathstar'
 import Card from './Card'
 
 const App = () => {
-  const {model, manufacturer, crew, starship_class} = testData
+  const {name, model, manufacturer, crew, starship_class} = testData
   const deathstarProps = {model, manufacturer, crew, starship_class}
   return (
     <div>
-      <Card />
+      <Card name={name}/>
       <Deathstar {...deathstarProps} />
     </div>
   )
