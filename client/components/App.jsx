@@ -1,17 +1,21 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import testData from '../../data/testdata.json'
-import Deathstar from './Deathstar'
+import Starship from './Starship'
 import Card from './Card'
 
 const App = () => {
-  const {name, model, manufacturer, crew, starship_class} = testData
-  const deathstarProps = {model, manufacturer, crew, starship_class}
+
   return (
     <div>
       <Card name={name}/>
-      <Deathstar {...deathstarProps} />
+      <Starship />
     </div>
   )
 }
 
 export default App
+
+
+
+  // const {name, model, manufacturer, crew, starship_class} = testData
+  // const deathstarProps = {model, manufacturer, crew, starship_class}

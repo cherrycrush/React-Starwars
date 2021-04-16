@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEFfect } from 'react'
+import { getStarshps } from '../apiClient'
 
-const Deathstar = (props) => {
-    const { model, manufacturer, crew, starship_class } = props
+const Starship = (props) => {
     const [showDetails, setShowDetails] = useState(false)
+    const [starshipData, setStarship] = useState({
+        name: '',
+        model: '',
+        crew: 0,
+        starship_class: ''
+    })
+
+    useEffect(() => {
+        getStarships()
+    })
 
     function handleClick () {
         console.log('click!')
@@ -22,4 +32,4 @@ const Deathstar = (props) => {
     )
 }
 
-export default Deathstar
+export default Starship

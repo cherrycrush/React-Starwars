@@ -20,7 +20,7 @@ module.exports = server
 server.get('/api/v1/starwars/starships/:id', (req, res) => {
   const starship = req.params.id
   return request
-    .get(`http://www.swapi.tech/api/planets/${starship}`)
+    .get(`https://swapi.dev/api/starships/${starship}`)
     .then(res => {
       return res.json(res.body)
     })
