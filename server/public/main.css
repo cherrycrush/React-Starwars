@@ -10,14 +10,15 @@ body {
 .heading {
     padding: 2rem;
     margin: 0 auto;
-    width: 40rem;
+    width: 60rem;
     color: goldenrod;
 }
 
 .content, p {
     padding: 1rem;
     margin: 0 auto;
-    width: 40rem;
+    width: 60rem;
+    color: antiquewhite;
     background-color: rgba(128, 128, 128, 0.150);
 }
 

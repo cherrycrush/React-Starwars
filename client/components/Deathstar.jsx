@@ -17,7 +17,7 @@ const Deathstar = (props) => {
                 <p>Crew: {crew}</p>
                 <p>Starship Class: {starship_class}</p>
              </> }
-             <button onClick={handleClick}>{showDetails ? 'Hide' : 'Show'} details</button>
+             <button type="button" class="btn btn-warning" onClick={handleClick}>{showDetails ? 'Hide' : 'Show'} details</button>
         </div>
     )
 }
