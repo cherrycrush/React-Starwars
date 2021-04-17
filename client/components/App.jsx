@@ -4,7 +4,6 @@ import Starship from './Starship'
 import Card from './Card'
 
 const App = () => {
-
   return (
     <div>
       <Card name={name}/>
