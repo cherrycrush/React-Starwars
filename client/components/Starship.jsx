@@ -11,7 +11,11 @@ const Starship = (props) => {
     })
 
     useEffect(() => {
-        getStarships()
+        getStarships(starship)
+        .then(data => {
+            setStarship(data)
+            return null
+        })
     })
 
     function handleClick () {

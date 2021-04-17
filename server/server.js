@@ -11,18 +11,18 @@ server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 server.use(cors('*'))
 
-server.use('/api/v1/starwars', routes)
+server.use('/api/v1/starwars/starships', routes)
 
 
 module.exports = server
 
 // Get the starships
-server.get('/api/v1/starwars/starships/:id', (req, res) => {
-  const starship = req.params.id
+server.get('/api/v1/starwars/starships/:starship', (req, res) => {
+  const starship = req.params.starship
   return request
     .get(`https://swapi.dev/api/starships/${starship}`)
-    .then(res => {
-      return res.json(res.body)
+    .then(response => {
+      return res.json(response.body)
     })
     .catch(err => {
       console.log(err)
