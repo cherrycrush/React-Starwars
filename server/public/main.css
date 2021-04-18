@@ -1,6 +1,7 @@
 * {
     background-color: rgb(8, 8, 36);
     font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
 }
 
 body {
@@ -14,11 +15,19 @@ body {
     color: goldenrod;
 }
 
-.content, p {
-    padding: 1rem;
+.content {
+    padding: 5rem;
     margin: 0 auto;
     width: 60rem;
     color: antiquewhite;
+    background-color: rgba(128, 128, 128, 0.150);
+}
+
+p {
+    padding: 1rem;
+}
+
+p:hover {
     background-color: rgba(128, 128, 128, 0.150);
 }
 
@@ -26,6 +35,5 @@ button {
     margin: 0 auto;
     border: none;
     padding: 1rem;
-    color: goldenrod;
 }
 
