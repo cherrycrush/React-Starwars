@@ -10,3 +10,10 @@ describe('<Starship />', () => {
     expect(modelField).not.toBe(undefined)
   })
 })
+
+test('Clicking show details will change text to hide details', () => {
+  render(<Starship />)
+  const button = screen.getByText(/Show details/)
+  fireEvent.click(button)
+  expect(button).toBe(screen.getByText(/Hide details/))
+})
