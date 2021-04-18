@@ -3,7 +3,7 @@ import { getStarships } from '../apiClient'
 
 let starship = {}
 
-function Starship (props) {
+function Starship () {
 	const [showDetails, setShowDetails] = useState(false)
 	const [starshipData, setStarship] = useState({
 		name: '',
@@ -24,7 +24,6 @@ function Starship (props) {
 	}, [])
 
 	function handleClick () {
-		console.log('click!')
 		setShowDetails(!showDetails)
 	}
 
