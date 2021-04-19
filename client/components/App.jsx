@@ -1,11 +1,12 @@
 import React from 'react'
-import testData from '../../data/testdata.json'
 import Starship from './Starship'
 import Card from './Card'
+import Nav from './Nav'
 
 const App = () => {
   return (
     <div>
+      <Nav />
       <Card name={name}/>
       <Starship />
     </div>
@@ -13,8 +14,3 @@ const App = () => {
 }
 
 export default App
-
-
-
-  // const {name, model, manufacturer, crew, starship_class} = testData
-  // const deathstarProps = {model, manufacturer, crew, starship_class}
