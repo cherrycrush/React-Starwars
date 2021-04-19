@@ -3,8 +3,6 @@ const express = require('express')
 const cors = require('cors')
 const request = require('superagent')
 
-const routes = require('./routes/routes')
-
 const server = express()
 
 server.use(express.json())

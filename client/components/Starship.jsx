@@ -1,26 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { getStarships } from '../apiClient'
+import { fetchData } from '../apiClient'
 
 function Starship () {
 	const [showDetails, setShowDetails] = useState(false)
-	const [starshipData, setStarship] = useState({
-		name: '',
-		model: '',
-		crew: 0,
-		starship_class: ''
-	})
+	const [starship, setStarship] = useState([])
 
-	useEffect(() => {
-		getStarships()
-		.then(data => {
-			setStarship(res.data)
-			return null
-		})
-		.catch(err => {
-			console.log(err)
-		})
-	})
-
+	useEffect(() => fetchData().then(response => setStarship(response))
+	
 	function handleClick () {
 		setShowDetails(!showDetails)
 	}
