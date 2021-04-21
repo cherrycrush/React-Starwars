@@ -1,29 +1,30 @@
 import React from 'react'
+import { getStarships } from '../apiClient' 
 
-export default function Nav () {
+export default function Nav (props) {
   return (
     <>
       <ul className="nav nav-tabs">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Deathstar</a>
+          <a className="nav-link" onClick={getStarships('9')}>Deathstar</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Millennium Falcon</a>
+          <a className="nav-link" onClick={getStarships('10')} >Millennium Falcon</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Y-Wing</a>
+          <a className="nav-link" >Y-Wing</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">X-Wing</a>
+          <a className="nav-link" >X-Wing</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">TIE Advanced x1</a>
+          <a className="nav-link" >TIE Advanced x1</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Executor</a>
+          <a className="nav-link" >Executor</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Rebel Transport</a>
+          <a className="nav-link" >Rebel Transport</a>
         </li>
       </ul>
     </>

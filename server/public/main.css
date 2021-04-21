@@ -40,6 +40,12 @@ button {
 .nav-link {
     color: goldenrod;
 }
+
+.nav-item {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
 .nav-link:hover {
     color: antiquewhite;
 }
