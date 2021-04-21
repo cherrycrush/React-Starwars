@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getStarships } from '../apiClient'
 
-function Starship () {
+function Starship (props) {
 	const [showDetails, setShowDetails] = useState(false)
 	const [starshipData, setStarship] = useState({
 		name: '',
@@ -11,7 +11,7 @@ function Starship () {
 	})
 
 	useEffect(() => {
-		getStarships('10')
+		getStarships(props.starshipId)
 		.then(data => {
 			console.log(data)
 			setStarship(data)
@@ -20,7 +20,7 @@ function Starship () {
 		.catch(err => {
 			console.log(err)
 		})
-	}, [])
+	}, [props.starshipId])
 
 	function handleClick () {
 		setShowDetails(!showDetails)
