@@ -11,15 +11,16 @@ function Starship () {
 	})
 
 	useEffect(() => {
-		getStarships()
+		getStarships('10')
 		.then(data => {
-			setStarship(res.data)
+			console.log(data)
+			setStarship(data)
 			return null
 		})
 		.catch(err => {
 			console.log(err)
 		})
-	})
+	}, [])
 
 	function handleClick () {
 		setShowDetails(!showDetails)
