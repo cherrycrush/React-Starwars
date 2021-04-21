@@ -37,3 +37,9 @@ button {
     padding: 1rem;
 }
 
+.nav-link {
+    color: goldenrod;
+}
+.nav-link:hover {
+    color: antiquewhite;
+}

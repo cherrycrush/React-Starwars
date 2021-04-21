@@ -28,12 +28,14 @@ function Starship () {
 
 	return (
 		<>
+			<h1 className="heading">{starshipData.name}</h1>
 			<div className="content">
 				<p>Model: {starshipData.model}</p>
 				{showDetails && <>
 					<p>Manufacturer: {starshipData.manufacturer}</p>
 					<p>Crew: {starshipData.crew}</p>
 					<p>Starship Class: {starshipData.starship_class}</p>
+					<p>Cost: {starshipData.cost_in_credits}</p>
 					</> }
 					<button type="button" className="btn btn-warning" onClick={handleClick}>{showDetails ? 'Hide' : 'Show'} details</button>
 			</div>
