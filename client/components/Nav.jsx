@@ -1,5 +1,4 @@
 import React from 'react'
-import { getStarships } from '../apiClient' 
 
 export default function Nav (props) {
 
@@ -18,19 +17,19 @@ export default function Nav (props) {
           <a className="nav-link" onClick={(evt) => handleClick(evt, '10')}>Millennium Falcon</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" >Y-Wing</a>
+          <a className="nav-link" onClick={(evt) => handleClick(evt, '11')}>Y-Wing</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" >X-Wing</a>
+          <a className="nav-link" onClick={(evt) => handleClick(evt, '12')}>X-Wing</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" >TIE Advanced x1</a>
+          <a className="nav-link" onClick={(evt) => handleClick(evt, '13')}>TIE Advanced x1</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" >Executor</a>
+          <a className="nav-link" onClick={(evt) => handleClick(evt, '15')}>Executor</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" >Rebel Transport</a>
+          <a className="nav-link" onClick={(evt) => handleClick(evt, '17')}>Rebel Transport</a>
         </li>
       </ul>
     </>

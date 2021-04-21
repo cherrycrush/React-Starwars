@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(8, 8, 36);
+    background-color: rgb(19, 19, 51);
     font-family: 'Press Start 2P', cursive;
     font-size: 0.7rem;
 }
@@ -11,14 +11,14 @@ body {
 .heading {
     padding: 2rem;
     margin: 0 auto;
-    width: 60rem;
+    width: 70rem;
     color: goldenrod;
 }
 
 .content {
     padding: 5rem;
     margin: 0 auto;
-    width: 60rem;
+    width: 70rem;
     color: antiquewhite;
     background-color: rgba(128, 128, 128, 0.150);
 }
@@ -39,6 +39,7 @@ button {
 
 .nav-link {
     color: goldenrod;
+    cursor: pointer;
 }
 
 .nav-item {
@@ -48,4 +49,10 @@ button {
 
 .nav-link:hover {
     color: antiquewhite;
+}
+
+.card {
+    margin: 0 auto;
+    width: 18rem;
+    color: goldenrod;
 }
