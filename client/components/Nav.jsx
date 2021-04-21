@@ -1,15 +1,15 @@
 import React from 'react'
 import { getStarships } from '../apiClient' 
 
-export default function Nav (props) {
+export default function Nav () {
   return (
     <>
       <ul className="nav nav-tabs">
         <li className="nav-item">
-          <a className="nav-link" onClick={getStarships('9')}>Deathstar</a>
+          <a className="nav-link" >Deathstar</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" onClick={getStarships('10')} >Millennium Falcon</a>
+          <a className="nav-link" >Millennium Falcon</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" >Y-Wing</a>
