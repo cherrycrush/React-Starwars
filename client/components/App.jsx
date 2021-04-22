@@ -9,6 +9,7 @@ const App = () => {
     <div>
       <Nav setStarshipId={setStarshipId} /> 
       <Starship starshipId={starshipId} />
+      <div className="author">Aaron Emerson @cherrycrush</div>
     </div>
   )
 }

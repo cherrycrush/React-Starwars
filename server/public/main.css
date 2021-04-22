@@ -10,6 +10,7 @@ body {
 
 .heading {
     padding: 2rem;
+    text-align: center;
     margin: 0 auto;
     width: 70rem;
     color: goldenrod;
@@ -54,5 +55,17 @@ button {
 .card {
     margin: 0 auto;
     width: 18rem;
+    color: goldenrod;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.author {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 2rem;
+    width: 50%;
     color: goldenrod;
 }

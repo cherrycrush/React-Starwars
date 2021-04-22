@@ -28,6 +28,7 @@ function Starship (props) {
 
 	return (
 		<>
+		<div className="container"></div>
 			<div className="card">
 				<img className="card-img-top" src="/images/Death_star1.png" alt="Card image" />
 			</div>
