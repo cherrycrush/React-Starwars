@@ -1,3 +1,15 @@
+# Star Wars Starships - in React!
+
+This was my personal project that I had written during bootcamp at Enspiral Dev Academy. 
+I wanted to practice using RESTful API's fetching their data and displaying it inside React components.
+
+## Getting started
+
+- Clone this repo, then ```npm install``` to install dependencies.
+- To start the server, ```npm run dev```
+- To view the server, it should be running on ```localhost:3000```. Put that in your browser of choice!
+
+<!-- 
 # A starter webpack project for React
 
 This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
@@ -25,4 +37,4 @@ and in the other:
 npm run server
 ```
 The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
-
+ -->
